@@ -197,7 +197,7 @@ proc colvars_length { mycolvars } {
     global cvsd
     set my_d 0
     set my_length 0.0
-    for { set cv 0 } { $cv < [llength cvsd] } { incr cv } {
+    for { set cv 0 } { $cv < [llength $cvsd] } { incr cv } {
 	for { set cvd 0 } { $cvd < [lindex $cvsd $cv] } { incr cvd } {
 	    set my_length [expr "$my_length+[lindex $cvsm $cv]*([lindex $mycolvars $my_d])**2"]
 	    incr my_d 1
